@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+<androidx.appcompat.widget.AppCompatAutoCompleteTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Add A Task"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textSize="60dp"
+    android:fontFamily="cursive"
+    android:textColor="#EA4C83"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black_shade1"
+            android:id="@+id/task_layout">
+
+            //app:hintTextColor="@color/white"
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter First Name"
+                android:textSize="30dp"
+                android:id="@+id/editTextTask"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/black_shade1"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/description_layout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Last Name"
+                android:textSize="30dp"
+                android:id="@+id/editTextDesc"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColorHint="@color/black_shade1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/finish_layout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Designation"
+                android:id="@+id/editTextFinishBy"
+                android:textSize="30dp"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLight" />
+    </LinearLayout>
+</RelativeLayout>
